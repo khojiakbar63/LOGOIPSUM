@@ -135,7 +135,7 @@
 // last circle
 
 .last_circle{
-   padding: 500px 0;
+   padding: 200px 0 300px;
    @extend %flex;
    .left{
       h3{
@@ -176,34 +176,3 @@
    }
 }
 
-footer .container{
-   // @extend %flex;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 200px;
-   .left{
-      width: 40%;
-      p{
-         @extend %p;
-         padding: 28px 0 16px;
-      }
-      button{
-         @include btnPrimary(#8C72FF, #fff, transprent, transprent,#8C72FF);
-         border-radius: 100px;
-         padding: 13px 8px;
-      }
-   }
-   .right{
-      width: 60%;
-     table{
-      color: #fff;
-      text-align: left;
-      tr{
-         th, td{
-            padding: 10px 15px;
-         }
-      }
-     } 
-   }
-}

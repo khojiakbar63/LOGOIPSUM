@@ -103,8 +103,52 @@
    animation-iteration-count: infinite;
    animation-direction:alternate;
 }
+#intro .step_away .wrapper img:nth-child(1){
+   animation-name: appearImage;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+#intro .step_away .wrapper img:nth-child(2){
+   animation-name: appearImage;
+   animation-duration: 6s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-direction: alternate-reverse;
+   animation-iteration-count: infinite;
+}
+#intro .clients  .sum__wrapper .card:nth-child(odd) {
+   animation-name: wigglingCards;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   animation-direction: alternate-reverse;
+   animation-iteration-count: infinite;
+}
+#intro .clients  .sum__wrapper .card:nth-child(even) {
+   animation-name: wigglingCards;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-fill-mode: backwards;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+}
+
+
 @keyframes logoUpAndDowns{
    to {
       transform: translateY(40px);
+   }
+}
+@keyframes appearImage{
+   to{
+      transform: scale(0)
+   }
+}
+@keyframes wigglingCards {
+   to{
+      transform: rotate(5deg);
    }
 }

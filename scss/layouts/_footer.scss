@@ -1,0 +1,47 @@
+footer .wrapper{
+   // @extend %flex;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 200px;
+   .left{
+      width: 40%;
+      p{
+         @extend %p;
+         padding: 28px 0 16px;
+      }
+      button{
+         @include btnPrimary(#8C72FF, #fff, transprent, transprent,#8C72FF);
+         border-radius: 100px;
+         padding: 13px 8px;
+      }
+   }
+   .right{
+      width: 60%;
+     table{
+      color: #fff;
+      text-align: left;
+      tr{
+         th, td{
+            padding: 10px 15px;
+         }
+      }
+     } 
+   }
+ 
+}
+
+.footer_foot{
+   margin-top: 80px;
+   border-top: 0.7px solid #D8D8D8;
+   padding: 24px 76px;
+   display: flex !important;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   .socials{
+      display: flex;
+      align-items: center;
+      gap: 13px;
+   }
+}
